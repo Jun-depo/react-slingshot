@@ -6,7 +6,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run: nmp i
+      - run: npm i
       - save_cache:
           key: "nmp-packages"
           paths:
