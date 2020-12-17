@@ -7,10 +7,6 @@ jobs:
     steps:
       - checkout
       - run: nmp i
-      - save_cache:
-          key: "nmp-packages"
-          paths:
-            - /src/node_modules
       - run: npm run lint
   test:
     docker:
